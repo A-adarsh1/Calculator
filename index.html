@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="box">
+      <center>
+        <div class="display"><input type="text" size="18" id="d" readonly></div>
+      </center>
+      <div class="keys">
+        <center>
+          <p><input type="button" class="button grey" value="&#37;" onclick="calculatePercent()">
+            <input type="button" class="button grey" value="&#8730;" onclick="calculateSquareRoot()" />
+            <input type="button" class="button grey" value="&#8592;" onclick='back()'>
+              <input type="button" class="button grey" value="/" onclick='math("/")'>
+          </p>
+          <p><input type="button" class="button black" value="7" onclick='math("7")'><input type="button"
+              class="button black" value="8" onclick='math("8")'><input type="button" class="button black" value="9"
+              onclick='math("9")'><input type="button" class="button grey" value="*" onclick='math("*")'></p>
+          <p><input type="button" class="button black" value="4" onclick='math("4")'><input type="button"
+              class="button black" value="5" onclick='math("5")'><input type="button" class="button black" value="6"
+              onclick='math("6")'><input type="button" class="button grey" value="-" onclick='math("-")'></p>
+          <p><input type="button" class="button black" value="1" onclick='math("1")'><input type="button"
+              class="button black" value="2" onclick='math("2")'><input type="button" class="button black" value="3"
+              onclick='math("3")'><input type="button" class="button grey" value="+" onclick='math("+")'></p>
+          <p><input type="button" class="button black" value="0" onclick='math("0")'>
+            <input type="button" class="button black" value="." onclick='math(".")'>
+            <input type="button" id="clear_button" class="button black" value="C" onclick='c("")'>
+            <input type="button" class="button green" value="=" onclick='e()'>
+          </p>
+          <center>
+      </div>
+    </div>
+
+    <script src="index.Js"></script>
+</body>
+
+</html>
